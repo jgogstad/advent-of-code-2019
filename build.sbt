@@ -1,4 +1,3 @@
-import Dependencies._
 
 ThisBuild / scalaVersion := "2.13.1"
 ThisBuild / version := "0.1.0-SNAPSHOT"
@@ -10,7 +9,8 @@ lazy val root = (project in file("."))
     name := "Advent of Code",
     libraryDependencies ++= Seq(
       "org.typelevel" %% "cats-core" % "2.0.0",
-      scalaTest % Test
+      "co.fs2" %% "fs2-core" % "2.1.0",
+      "org.typelevel" %% "cats-effect" % "2.0.0"
     )
   )
 
